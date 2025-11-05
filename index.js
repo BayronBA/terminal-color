@@ -12,13 +12,9 @@ import chalk from 'chalk';
 //function saludar(nombre) {
   //console.log(chalk.cyan(`Hola ${nombre}, ¡bienvenido al mundo JavaScript! 🌍`)); 
 //}
-function mostrarEstado(nombre) {
-  console.info(chalk.cyan(`El programa a iniciado! 🌍`)); 
+
+function simularError() {
+  console.warn(chalk.yellow("❗Atención: esto podría generar un error"));
 }
 
-mostrarEstado();
-
-
-
-// Prueba de función
-//("Equipo JS");
+simularError();
