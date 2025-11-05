@@ -13,6 +13,14 @@ import chalk from 'chalk';
   //console.log(chalk.cyan(`Hola ${nombre}, ¡bienvenido al mundo JavaScript! 🌍`));
 //}
 
+function mostrarEstado(nombre) {
+  console.log(chalk.cyan(`El programa ha iniciado! 🌍`)); 
+  console.info(chalk.green('💡 Proceso en ejecucion'));
+  console.warn(chalk.red('✅ El programa ha terminado exitosamente'));
+}
+
+mostrarEstado();
+
 function simularError() {
   console.warn(chalk.yellow("❗Atención: esto podría generar un error"));
   console.error(chalk.red("❌ Error simulado: no me gusta tu tonito"));
@@ -22,11 +30,7 @@ function simularError() {
 simularError();
   //console.log(chalk.cyan(`Hola ${nombre}, ¡bienvenido al mundo JavaScript! 🌍`)); 
 //}
-function mostrarEstado(nombre) {
-  console.log(chalk.cyan(`El programa ha iniciado! 🌍`)); 
-  console.info(chalk.green('💡 Proceso en ejecucion'));
-  console.warn(chalk.red('✅ El programa ha terminado exitosamente'));
-}
+
 
 mostrarEstado();
 
